@@ -20,19 +20,24 @@
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <!-- <button type="button" @click="count++">count is: {{ count }}</button> -->
   <a-button type="primary" @click="count++">count is: {{ count }}</a-button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+
+  <SettingOutlined class="icon" />
 </template>
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+import { SettingOutlined } from '@ant-design/icons-vue'
 
 export default defineComponent({
   name: 'HelloWorld',
+  components: {
+    SettingOutlined
+  },
   props: {
     msg: {
       type: String,
