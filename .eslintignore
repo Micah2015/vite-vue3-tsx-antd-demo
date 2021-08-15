@@ -1,0 +1,8 @@
+/.vscode
+/.git
+node_modules
+vite.config.ts
+.eslintrc.js
+perttier.config.js
+/public
+/dist
